@@ -1,0 +1,24 @@
+nap = "1ms"
+cursor = "0"
+count = 1000
+
+[redis]
+auth = "rAtPMZ*Ia374TF28"
+
+servers = [
+"redis://m8989.bx.redis.m.com:8989",
+"redis://m8990.bx.redis.m.com:8990",
+"redis://m8991.bx.redis.m.com:8991",
+"redis://m8992.bx.redis.m.com:8992",
+"redis://m8993.bx.redis.m.com:8993",
+"redis://m8994.bx.redis.m.com:8994",
+"redis://m8995.bx.redis.m.com:8995",
+"redis://m8996.bx.redis.m.com:8996",
+"redis://m8997.bx.redis.m.com:8997",
+"redis://m8998.bx.redis.m.com:8998",
+"redis://m8999.bx.redis.m.com:8999",
+"redis://m9000.bx.redis.m.com:9000",
+"redis://m9001.bx.redis.m.com:9001",
+"redis://m9002.bx.redis.m.com:9002",
+"redis://m9003.bx.redis.m.com:9003",
+"redis://m9004.bx.redis.m.com:9004"]

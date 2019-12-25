@@ -1,0 +1,11 @@
+p = "10ms"
+cursor = "0"
+count = 1000
+fields = ["10.12.132.68:5051","10.12.132.69:5051"]
+
+[redis]
+auth = ""
+
+servers = [
+"redis://m8989.bx.redis.m.com:8989",
+]

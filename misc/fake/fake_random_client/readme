@@ -1,0 +1,7 @@
+https://github.com/dvyukov/go-fuzz
+
+./bin/go-fuzz-build  github.com/meitu/bifrost/misc/fake/fake_random_client
+./bin/go-fuzz -bin=random-fuzz.zip -workdir=./
+
+
+
