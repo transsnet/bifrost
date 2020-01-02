@@ -1,25 +1,25 @@
-## mqtt 协议支持测试自动化
+## The MQTT protocol supports test automation
 
 #### IM
 
-    * c1.c2 登录.订阅一个topic.下发消息
-    * c1 离线.消息保持正常下发
-    * 消息正常下发
-    * c2 离线，消息下发,c1,c2 未收到消息
+    * c1.c2 login. subscribe to a topic. Send a message
+    * C1 is offline. messages remain delivered as normal
+    * message sent normally
+    * c2 offline, message sent. c1,c2 did not receive the message
 
 #### Push
 
-    * c1.c2 登录订阅不通topic.消息正常下发 
+    * c1.c2 login and subscribe no topic. Messages are issued normally
 
 #### retain msg
 
-    // 两个case
-    * c1.c2 未登录.下发消息retain空消息.c1.c2 登录收到.
-    * c1.c2 未登录.下发消息retain空消息.客户端登录未收到.
+    // Two case
+    * c1.c2 is not logged in. send message retain empty message. c1.c2 is logged in and received.
+    * c1.c2 not logged in. send message retain empty message. c1.c2login not received
 
-#### cleansession (绘画恢复登录)
+#### cleansession
 
-    * 消息下发.c1 登录收到消息.下发消息，离线，下发消息，登录收到消息(bug:要求至少一个在线)
+    * c1 log in to receive messages. Log in to receive messages, log out, log out, log in to receive messages
 
 #### will msg 
 
