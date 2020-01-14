@@ -1,22 +1,21 @@
-# fake_conn 工具介绍
+# fake_conn tool is introduced
 
-## 目的
+## Purpose
 
-* 封住grpc中connd协议服务端。
-* 如果需要可以通过在响应的回调函中添加响应的逻辑，做到快速开发 。
+* Provide the connd protocol server in GRPC.
 
+## Directions for use
 
-##使用介绍
-conn 提供如下参数：
+conn parameters that：
 
- * etcd string ：conn向etcd服务注册,etcd的地址。默认为："http://127.0.0.1:2379"
+ * etcd string : Conn registers with etcd service. default:"http://127.0.0.1:2379"
     	
- * register string ：回调服务的注册地址，即使本程序。默认"localhost:20081"
+ * register string : The registered address of the callback service ,default:"http://localhost:20081"
 
- * service string : 注册分服务名称，应该和pushd配置相同。默认为"conn-live"
+ * service string : Register the service name, which should be the same as the pushd configuration. default:"conn-live"
 
 
-## 使用方式
+## Examplet
  
 ```
 ./fake_conn -etcd="http://192.168.22.11:4445" -register="192.168.22.12:5041"
